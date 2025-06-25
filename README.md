@@ -15,22 +15,17 @@ This project uses the [OpenAI Agents SDK](https://github.com/openai/agents) with
 
 Make sure to install dependencies:
 
-```bash
+
 pip install -r requirements.txt
 requirements.txt
-text
-Copy
-Edit
+
 requests
 python-dotenv
 agents  # from OpenAI Agents SDK (install with pip)
 🔐 Environment Setup
 Create a .env file with your Gemini API key:
 
-env
-Copy
-Edit
-GEMINI_API_KEY=your_gemini_api_key_here
+GEMINI_API_KEY=your_gemini_api_key
 🧠 How It Works
 A function tool get_crypto_price is defined to fetch real-time data.
 
@@ -39,9 +34,6 @@ An Agent is created that only responds to coin-related questions.
 The input from the user is processed via Runner.run().
 
 📈 Example
-bash
-Copy
-Edit
 $ python crypto_agent.py
 What do you want to ask? Bitcoin price
 Fetched Price: 64537.23
